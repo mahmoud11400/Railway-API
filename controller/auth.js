@@ -12,6 +12,11 @@ const transport = nodeMailer.createTransport( sendGridTransport({auth:
     const email = req.body.email;
     const password= req.body.password;
     const phoneNumber = req.body.phoneNumber;
+    console.log("hello");
+    console.log(email);
+    console.log(password);
+    console.log(phoneNumber);
+
     userModel.find({email:email}).then(loadedUser=>{
         loadedUser=loadedUser[0];
         if(loadedUser!=null)
