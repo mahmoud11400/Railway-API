@@ -3,5 +3,5 @@ const route = express.Router();
 
 const trackTrainController = require('../controller/trackTrain');
 
-route.post('/train',trackTrainController.trackTrainController);
+route.post('/train',trackTrainController.postTrackTrain);
 module.exports=route;
